@@ -1,4 +1,5 @@
 ﻿using command.Interfaces;
+using command.Models;
 
 namespace command.Commands
 {
