@@ -6,9 +6,9 @@ namespace chainofresponsibility.Handlers
     {
         public NullHandler(IHandler? next) : base(next) { }
 
-        public override IEnumerable<Content> Handle(int identifier)
+        public override async Task<IEnumerable<Content>?> HandleAsync(int identifier)
         {
-            return new List<Content>();
+            return await Task.Run(() => new List<Content>());
         }
     }
 }
