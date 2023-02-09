@@ -2,7 +2,7 @@
 
 namespace chainofresponsibility.Handlers
 {
-    internal class BaseHandler : IHandler
+    internal abstract class BaseHandler : IHandler
     {
         protected IHandler? next;
 
@@ -11,11 +11,7 @@ namespace chainofresponsibility.Handlers
             this.next = next;
         }
 
-        public IEnumerable<Content> Handle(int identifier)
-        {
-            // Imitate the Null pattern as our Base Class
-            return new List<Content>();
-        }
+        public abstract IEnumerable<Content> Handle(int identifier);
 
         public void SetNext(IHandler h)
         {
