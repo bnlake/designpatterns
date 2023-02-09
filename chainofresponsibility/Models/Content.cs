@@ -2,8 +2,7 @@
 {
     internal class Content
     {
-        string Id;
-        string Title;
-        string Blurb;
+        public string Title;
+        public string Blurb;
     }
 }
