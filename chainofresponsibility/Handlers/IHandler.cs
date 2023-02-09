@@ -5,6 +5,6 @@ namespace chainofresponsibility.Handlers
     internal interface IHandler
     {
         void SetNext(IHandler h);
-        IEnumerable<Content> Handle(int identifier);
+        Task<IEnumerable<Content>?> HandleAsync(int identifier);
     }
 }

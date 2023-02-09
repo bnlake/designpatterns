@@ -11,7 +11,7 @@ namespace chainofresponsibility.Handlers
             this.next = next;
         }
 
-        public abstract IEnumerable<Content> Handle(int identifier);
+        public abstract Task<IEnumerable<Content>?> HandleAsync(int identifier);
 
         public void SetNext(IHandler h)
         {
