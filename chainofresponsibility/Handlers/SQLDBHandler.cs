@@ -22,6 +22,7 @@ namespace chainofresponsibility.Handlers
 
         public override async Task<IEnumerable<Content>?> HandleAsync(int identifier)
         {
+            Console.WriteLine("-- SQL DB Handler Invoked");
             await Task.Delay(1200); // Simulate slow DB request
 
             IEnumerable<Content>? result;

@@ -8,6 +8,7 @@ namespace chainofresponsibility.Handlers
 
         public override async Task<IEnumerable<Content>?> HandleAsync(int identifier)
         {
+            Console.WriteLine("-- Null Handler Invoked");
             return await Task.Run(() => new List<Content>());
         }
     }

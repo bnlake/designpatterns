@@ -17,6 +17,7 @@ namespace chainofresponsibility.Handlers
         {
             // WARNING!! THIS IS NOT A PRODUCTION READY EXAMPLE. 
             // THIS WILL NOT HANDLE REFRESHING THE CACHE ON SUBSEQUENT MATCHES
+            Console.WriteLine("-- Redis Handler Invoked");
 
             await Task.Delay(200); // Simulate faster cache access
 
