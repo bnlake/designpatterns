@@ -6,7 +6,7 @@ namespace chainofresponsibility.Handlers
     {
         private IDictionary<int, IEnumerable<Content>> dataset;
 
-        public RedisHandler(IHandler? next) : base(next)
+        public RedisHandler(IHandler? next = null) : base(next)
         {
             // Imitate the existance of a Redis cache
             // A cache likely is empty on initialization

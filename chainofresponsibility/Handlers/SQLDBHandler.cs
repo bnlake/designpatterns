@@ -9,7 +9,7 @@ namespace chainofresponsibility.Handlers
         private readonly Content sample2 = new Content() { Title = "Fever", Blurb = "Home treatment for fever symptoms" };
         private readonly Content sample3 = new Content() { Title = "Stress", Blurb = "Coping with stress in a ruthless work environment" };
 
-        public SQLDBHandler(IHandler? next) : base(next)
+        public SQLDBHandler(IHandler? next = null) : base(next)
         {
             // Imitate the existance of a SQL DB
             this.dataset = new Dictionary<int, IEnumerable<Content>>();

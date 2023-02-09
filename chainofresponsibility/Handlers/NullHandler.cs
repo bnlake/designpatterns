@@ -4,7 +4,7 @@ namespace chainofresponsibility.Handlers
 {
     internal class NullHandler : BaseHandler
     {
-        public NullHandler(IHandler? next) : base(next) { }
+        public NullHandler(IHandler? next = null) : base(next) { }
 
         public override async Task<IEnumerable<Content>?> HandleAsync(int identifier)
         {

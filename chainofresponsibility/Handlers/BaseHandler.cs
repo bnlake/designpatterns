@@ -6,7 +6,7 @@ namespace chainofresponsibility.Handlers
     {
         protected IHandler? next;
 
-        public BaseHandler(IHandler? next)
+        public BaseHandler(IHandler? next = null)
         {
             this.next = next;
         }
