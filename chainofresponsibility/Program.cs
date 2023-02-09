@@ -1,4 +1,5 @@
 ﻿using chainofresponsibility.Handlers;
+using chainofresponsibility.Models;
 
 public static class Program
 {
@@ -22,7 +23,7 @@ public static class Program
         return 0;
     }
 
-    private static void PrintFavorites(IEnumerable<chainofresponsibility.Models.Content>? favorites)
+    private static void PrintFavorites(IEnumerable<Content>? favorites)
     {
         if (favorites is null || favorites.Count() == 0)
         {
@@ -30,7 +31,7 @@ public static class Program
             return;
         }
 
-        foreach (chainofresponsibility.Models.Content content in favorites)
+        foreach (Content content in favorites)
         {
             Console.WriteLine(content.ToString());
         }
