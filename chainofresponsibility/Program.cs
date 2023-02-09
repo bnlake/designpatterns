@@ -15,6 +15,7 @@ public static class Program
             int input = int.Parse(Console.ReadLine()?.ToString() ?? (-1).ToString());
             if (input < 0) break;
             Console.WriteLine();
+
             PrintFavorites(await chain.HandleAsync(input));
         }
 
@@ -23,6 +24,15 @@ public static class Program
 
     private static void PrintFavorites(IEnumerable<chainofresponsibility.Models.Content>? favorites)
     {
-        if (favorites is null || favorites.Count() == 0) Console.WriteLine("No favorites for user");
+        if (favorites is null || favorites.Count() == 0)
+        {
+            Console.WriteLine("No favorites for user");
+            return;
+        }
+
+        foreach (chainofresponsibility.Models.Content content in favorites)
+        {
+            Console.WriteLine(content.ToString());
+        }
     }
 }
