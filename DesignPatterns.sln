@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "strategy", "strategy\strate
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chainofresponsibility", "chainofresponsibility\chainofresponsibility.csproj", "{8A669BBE-510F-4E74-BCBC-87F237B5C68B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "factory", "factory\factory.csproj", "{772CE4B8-D917-4829-B75C-7AFAFD05426B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{AFB189B2-B1B4-4E35-B44B-3FF753D6480A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFB189B2-B1B4-4E35-B44B-3FF753D6480A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFB189B2-B1B4-4E35-B44B-3FF753D6480A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{772CE4B8-D917-4829-B75C-7AFAFD05426B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{772CE4B8-D917-4829-B75C-7AFAFD05426B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{772CE4B8-D917-4829-B75C-7AFAFD05426B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{772CE4B8-D917-4829-B75C-7AFAFD05426B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8A669BBE-510F-4E74-BCBC-87F237B5C68B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8A669BBE-510F-4E74-BCBC-87F237B5C68B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A669BBE-510F-4E74-BCBC-87F237B5C68B}.Release|Any CPU.ActiveCfg = Release|Any CPU
