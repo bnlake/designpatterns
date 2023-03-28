@@ -4,6 +4,9 @@
     {
         static void Main(string[] args)
         {
+            // Locate and register all EncounterHelper classes
+            EncounterHelperFactory.RegisterHelpers();
+
             while (true)
             {
                 var fhirVersion = PromptForFhirVersion();
@@ -33,6 +36,7 @@
             Console.WriteLine("3. STU3");
             Console.WriteLine("4. R4");
             Console.WriteLine("Choose your version: ");
+
             if (Enum.TryParse<FhirVersion>(Console.ReadLine(), out var result))
             {
                 return result;
