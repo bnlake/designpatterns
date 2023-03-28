@@ -3,12 +3,9 @@ using factory.Interfaces;
 
 namespace factory
 {
-    internal class EncounterHelperFactory : IEncounterHelperFactory
+    internal static class EncounterHelperFactory
     {
-        private readonly FhirVersion fhirVersion;
-        public EncounterHelperFactory(FhirVersion fhirVersion) { this.fhirVersion = fhirVersion; }
-
-        public IEncounterHelper Create()
+        public static IEncounterHelper Create(FhirVersion fhirVersion)
         {
             switch (fhirVersion)
             {

@@ -11,8 +11,7 @@
 
                 try
                 {
-                    var factory = new EncounterHelperFactory(fhirVersion);
-                    var helper = factory.Create();
+                    var helper = EncounterHelperFactory.Create(fhirVersion);
                     Console.WriteLine($"Encounter ID: {helper.EncounterId}");
                 }
                 catch (NotImplementedException ex)
