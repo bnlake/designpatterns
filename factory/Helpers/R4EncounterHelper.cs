@@ -4,6 +4,6 @@ namespace factory.Helpers
 {
     internal class R4EncounterHelper : IEncounterHelper
     {
-        public string EncounterId => new Guid().ToString();
+        public string EncounterId => Guid.NewGuid().ToString();
     }
 }
