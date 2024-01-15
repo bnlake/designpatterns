@@ -3,5 +3,5 @@ using state;
 
 public interface ITrafficLightState
 {
-    Task ChangeAsync(TrafficLight trafficLight);
+    Task ExecuteAsync(TrafficLight trafficLight);
 }

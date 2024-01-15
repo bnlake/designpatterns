@@ -5,7 +5,7 @@ namespace state;
 
 public class RedLightState : ITrafficLightState
 {
-    public async Task ChangeAsync(TrafficLight trafficLight)
+    public async Task ExecuteAsync(TrafficLight trafficLight)
     {
         Console.WriteLine("Red Light");
         await Task.Delay(TimeSpan.FromSeconds(4));

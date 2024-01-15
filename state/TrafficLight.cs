@@ -2,16 +2,9 @@
 
 namespace state;
 
-public class TrafficLight
+public class TrafficLight(ITrafficLightState state)
 {
-    public ITrafficLightState State;
-    public TrafficLight(ITrafficLightState State)
-    {
-        this.State = State;
-    }
+    public ITrafficLightState State { get; set; } = state;
 
-    public Task ChangeAsync()
-    {
-        return State.ChangeAsync(this);
-    }
+    public Task ChangeAsync => State.ExecuteAsync(this);
 }
